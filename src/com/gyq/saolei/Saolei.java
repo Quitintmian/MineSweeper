@@ -37,7 +37,7 @@ public class Saolei implements ActionListener {
 
     public Saolei(){
         frame.setBounds(300,200,650,770);//窗口尺寸(650*750)
-        frame.setResizable(true);//窗口大小不可改变
+        frame.setResizable(false);//窗口大小不可改变
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//按x可关闭
         frame.setLayout(new BorderLayout());//建立布局
 
@@ -284,14 +284,9 @@ public class Saolei implements ActionListener {
                 }
             }
         }
-        //JOptionPane.showMessageDialog(frame,"你失败了!\n点击\"你爆雷了\"重新开始！");
-
-
-
     }
 
     public static void main(String[] args) {
         new Saolei();
     }
-
 }
